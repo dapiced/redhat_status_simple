@@ -1,0 +1,34 @@
+# Cache and temporary files
+.cache/
+*.log
+*.tmp
+
+# Export files
+redhat_status_*.json
+redhat_status_*.csv
+redhat_summary_*.txt
+status_history_*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment files
+.env
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+{
+  "_comment": "Configuration file for Red Hat Status Checker Simple Versions (v1 and v2)",
+  "_note": "This is a simplified configuration with only essential settings",
+  "_versions": "redhat_summary_status_simple_v1.py (uses no config), redhat_summary_status_simple_v2.py (uses this config)",
+  "api": {
+    "url": "https://status.redhat.com/api/v2/summary.json",
+    "timeout": 10,
+    "max_retries": 3,
+    "retry_delay": 2
+  },
+  "output": {
+    "default_directory": ".",
+    "timestamp_format": "%Y%m%d_%H%M%S"
+  },
+  "display": {
+    "show_percentages": true,
+    "show_health_indicator": true,
+    "show_group_summaries": true
+  }
+}
