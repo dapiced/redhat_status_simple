@@ -11,11 +11,11 @@ Features:
 - Basic caching for performance
 
 Usage:
-    python3 redhat_status_v1.py quick           # Quick status with availability %
-    python3 redhat_status_v1.py quick --quiet   # Quiet mode with just availability %
-    python3 redhat_status_v1.py simple          # Main services only
-    python3 redhat_status_v1.py full            # Complete structure
-    python3 redhat_status_v1.py export          # Export to files
+    python3 redhat_status.py quick           # Quick status with availability %
+    python3 redhat_status.py quick --quiet   # Quiet mode with just availability %
+    python3 redhat_status.py simple          # Main services only
+    python3 redhat_status.py full            # Complete structure
+    python3 redhat_status.py export          # Export to files
 """
 
 import requests
