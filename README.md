@@ -25,6 +25,15 @@ This project provides a standalone Red Hat status monitoring tool that fetches r
 - Python 3.6 or higher
 - `requests` library
 
+### Configuration variables inside redhat_status.py
+
+- API_URL = "https://status.redhat.com/api/v2/summary.json"
+- REQUEST_TIMEOUT = 10
+- MAX_RETRIES = 3
+- RETRY_DELAY = 2
+- CACHE_TTL = 300  # 5 minutes
+- CACHE_DIR = ".cache"
+
 ### Installation
 
 1. Clone or download the repository:
