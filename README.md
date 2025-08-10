@@ -136,8 +136,3 @@ For verbose output, you can modify the scripts to add debug logging or run with 
 python3 -v redhat_status.py quick
 ```
 ---
-
-**Last Updated**: August 2025  
-**Compatible Python Versions**: 3.6+  
-**API Version**: v2
-
