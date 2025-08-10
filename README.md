@@ -2,7 +2,7 @@
 
 A lightweight Python utility to monitor Red Hat service status with global availability tracking and comprehensive reporting capabilities.
 
-**Version:** 1.0 - Lightweigh Edition
+**Version:** 1.0 - Lightweight Edition
 
 ## 📋 Overview
 
