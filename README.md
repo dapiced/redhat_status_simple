@@ -2,6 +2,8 @@
 
 A lightweight Python utility to monitor Red Hat service status with global availability tracking and comprehensive reporting capabilities.
 
+**Version:** 1.0 - Lightweigh Edition
+
 ## 📋 Overview
 
 This project provides a standalone Red Hat status monitoring tool that fetches real-time status data from Red Hat's official status API and provides various output formats including quick status checks, detailed service hierarchies, and data export capabilities.
