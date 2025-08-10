@@ -4,7 +4,7 @@ A lightweight Python utility to monitor Red Hat service status with global avail
 
 ## 🎨 Demo
 
-![Démo CLI](./demo.svg)
+![Démo CLI](./redhat_status.svg)
 
 ## 📋 Overview
 
