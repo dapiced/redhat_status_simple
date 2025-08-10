@@ -52,29 +52,29 @@ source .env
 
 #### Version 1 (Standalone)
 ```bash
-# Quick status with global availability
-python3 redhat_status_simple_v1.py quick
+# Quick Status Check
+python3 redhat_status_v1.py quick
 
 # Quiet mode (minimal output)
-python3 redhat_status_simple_v1.py quick --quiet
+python3 redhat_status_v1.py quick --quiet
 
 # Main services only
-python3 redhat_status_simple_v1.py simple
+python3 redhat_status_v1.py simple
 
 # Complete service hierarchy
-python3 redhat_status_simple_v1.py full
+python3 redhat_status_v1.py full
 
 # Export data to files
-python3 redhat_status_simple_v1.py export
+python3 redhat_status_v1.py export
 ```
 
 #### Version 2 (Configurable)
 ```bash
 # Same commands as v1, but uses config_simple.json for settings
-python3 redhat_status_simple_v2.py quick
-python3 redhat_status_simple_v2.py simple
-python3 redhat_status_simple_v2.py full
-python3 redhat_status_simple_v2.py export
+python3 redhat_status_v2.py quick
+python3 redhat_status_v2.py simple
+python3 redhat_status_v2.py full
+python3 redhat_status_v2.py export
 ```
 
 ## 🎛️ Command Line Options
@@ -98,31 +98,31 @@ python3 redhat_status_simple_v2.py export
 
 ## � Complete Command Reference
 
-### Version 1 Commands (redhat_status_simple_v1.py)
+### Version 1 Commands (redhat_status_v1.py)
 
 | Command | Description | Output |
 |---------|-------------|---------|
-| `python3 redhat_status_simple_v1.py --help` | Display help message and usage examples | Shows all available modes and flags |
-| `python3 redhat_status_simple_v1.py --version` | Show version information | `Red Hat Status Checker - Simple v1.0` |
-| `python3 redhat_status_simple_v1.py quick` | Quick status with global availability (default) | Global status, availability %, health indicator |
-| `python3 redhat_status_simple_v1.py quick --quiet` | Minimal output with just availability | Essential info only (availability % and status) |
-| `python3 redhat_status_simple_v1.py simple` | Main services only | List of 20 main Red Hat services with status |
-| `python3 redhat_status_simple_v1.py full` | Complete hierarchical structure | All 139 services in hierarchical tree format |
-| `python3 redhat_status_simple_v1.py export` | Export data to files | Creates timestamped JSON and TXT files |
+| `python3 redhat_status_v1.py --help` | Display help message and usage examples | Shows all available modes and flags |
+| `python3 redhat_status_v1.py --version` | Show version information | `Red Hat Status Checker - Simple v1.0` |
+| `python3 redhat_status_v1.py quick` | Quick status with global availability (default) | Global status, availability %, health indicator |
+| `python3 redhat_status_v1.py quick --quiet` | Minimal output with just availability | Essential info only (availability % and status) |
+| `python3 redhat_status_v1.py simple` | Main services only | List of 20 main Red Hat services with status |
+| `python3 redhat_status_v1.py full` | Complete hierarchical structure | All 139 services in hierarchical tree format |
+| `python3 redhat_status_v1.py export` | Export data to files | Creates timestamped JSON and TXT files |
 
-### Version 2 Commands (redhat_status_simple_v2.py)
+### Version 2 Commands (redhat_status_v2.py)
 
 | Command | Description | Output |
 |---------|-------------|---------|
-| `python3 redhat_status_simple_v2.py --help` | Display help message with enhanced options | Shows all modes, flags, and examples |
-| `python3 redhat_status_simple_v2.py --version` | Show version information | `Red Hat Status Checker Simple v2.0` |
-| `python3 redhat_status_simple_v2.py --setup` | Create/update configuration file | Interactive setup for config_simple.json |
-| `python3 redhat_status_simple_v2.py quick` | Enhanced quick status with branding | Detailed global status with v2 formatting |
-| `python3 redhat_status_simple_v2.py quick --quiet` | Minimal output mode | Essential availability and status info |
-| `python3 redhat_status_simple_v2.py simple` | Enhanced main services display | Global status + main services with statistics |
-| `python3 redhat_status_simple_v2.py full` | Complete structure with group stats | All services with group availability percentages |
-| `python3 redhat_status_simple_v2.py export --output test_exports` | Export to custom directory | Creates JSON file in specified directory |
-| `python3 redhat_status_simple_v2.py all` | Comprehensive display (all features) | Global + main + full + export in one command |
+| `python3 redhat_status_v2.py --help` | Display help message with enhanced options | Shows all modes, flags, and examples |
+| `python3 redhat_status_v2.py --version` | Show version information | `Red Hat Status Checker Simple v2.0` |
+| `python3 redhat_status_v2.py --setup` | Create/update configuration file | Interactive setup for config_simple.json |
+| `python3 redhat_status_v2.py quick` | Enhanced quick status with branding | Detailed global status with v2 formatting |
+| `python3 redhat_status_v2.py quick --quiet` | Minimal output mode | Essential availability and status info |
+| `python3 redhat_status_v2.py simple` | Enhanced main services display | Global status + main services with statistics |
+| `python3 redhat_status_v2.py full` | Complete structure with group stats | All services with group availability percentages |
+| `python3 redhat_status_v2.py export --output test_exports` | Export to custom directory | Creates JSON file in specified directory |
+| `python3 redhat_status_v2.py all` | Comprehensive display (all features) | Global + main + full + export in one command |
 
 ### Additional Version 2 Flags
 
@@ -215,8 +215,8 @@ export REDHAT_STATUS_RETRY_DELAY=3
 ```
 redhat_summary_status_simple/
 ├── README.md                              # This file
-├── redhat_status_simple_v1.py             # Standalone version
-├── redhat_status_simple_v2.py             # Configurable version
+├── redhat_status_v1.py             # Standalone version
+├── redhat_status_v2.py             # Configurable version
 ├── config_simple.json                     # Configuration file (v2)
 ├── .env.example                           # Environment variables template
 ├── .cache/                                # Cache directory (auto-created)
@@ -284,7 +284,7 @@ redhat_summary_status_simple/
 For verbose output, you can modify the scripts to add debug logging or run with Python's verbose flag:
 
 ```bash
-python3 -v redhat_status_simple_v1.py quick
+python3 -v redhat_status_v1.py quick
 ```
 
 ## 📈 Version Differences

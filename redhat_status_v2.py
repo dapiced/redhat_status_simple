@@ -448,7 +448,7 @@ def create_config_file() -> None:
         config_data = {
             "_comment": "Configuration file for Red Hat Status Checker Simple Versions (v1 and v2)",
             "_note": "This is a simplified configuration with only essential settings",
-            "_versions": "redhat_status_simple_v1.py (uses no config), redhat_status_simple_v2.py (uses this config)",
+            "_versions": "redhat_status_v1.py (uses no config), redhat_status_v2.py (uses this config)",
             
             "api": {
                 "url": "https://status.redhat.com/api/v2/summary.json",
