@@ -88,64 +88,6 @@ python3 redhat_status.py export
 | `python3 redhat_status.py full` | Complete hierarchical structure | All 139 services in hierarchical tree format |
 | `python3 redhat_status.py export` | Export data to files | Creates timestamped JSON and TXT files |
 
-## �📊 Output Examples
-
-### Quick Status (Default)
-```
-🚀 RED HAT GLOBAL STATUS
-============================================================
-📍 Page: Red Hat Status
-🔗 URL: https://status.redhat.com
-🕒 Last Update: 2025-08-04T10:30:00Z
-
-🟢 STATUS: All Systems Operational
-🏷️  Severity: All Systems Operational
-
-🟢 GLOBAL AVAILABILITY: 98.5% (127/129 services)
-🏥 Overall Health: EXCELLENT
-```
-
-### Simple Mode (Main Services)
-```
-🔍 RED HAT MAIN SERVICES
-============================================================
-🟢 Main Services Availability: 100.0% (12/12)
-
-✅ Red Hat Enterprise Linux
-✅ Red Hat OpenShift Online
-✅ Red Hat Customer Portal
-🟡 Red Hat Insights - Performance Issues
-✅ Red Hat Satellite
-```
-
-### Full Mode (Hierarchical)
-```
-🌍 RED HAT COMPLETE SERVICE STATUS
-============================================================
-🟢 Global Availability: 98.5% (127/129 services)
-
-✅ Red Hat Enterprise Linux
-  ├─ ✅ RHEL 8
-  ├─ ✅ RHEL 9
-  ├─ 🟡 RHEL 7 Extended Support
-
-✅ Red Hat OpenShift
-  ├─ ✅ OpenShift Online
-  ├─ ✅ OpenShift Dedicated
-```
-
-## 📁 File Structure
-
-```
-redhat_summary_status_simple/
-├── README.md                              # This file
-├── redhat_status.py                       # Main script
-├── .cache/                                # Cache directory (auto-created)
-│   └── summary_data.json                  # Cached API responses
-└── redhat_status_YYYYMMDD_HHMMSS.json     # Export files (created in current dir)
-    redhat_summary_YYYYMMDD_HHMMSS.txt     # Summary export files
-```
-
 ## 🔧 Technical Details
 
 ### API Endpoint
@@ -157,21 +99,6 @@ redhat_summary_status_simple/
 - **Duration**: 5 minutes (300 seconds)
 - **Location**: `.cache/summary_data.json`
 - **Behavior**: Automatic cache validation and refresh
-
-### Status Mapping
-| API Status | Display | Icon |
-|------------|---------|------|
-| `operational` | Operational | ✅ |
-| `degraded_performance` | Performance Issues | 🟡 |
-| `partial_outage` | Partial Outage | 🟠 |
-| `major_outage` | Major Outage | 🔴 |
-| `maintenance` | Under Maintenance | 🔧 |
-
-### Health Indicators
-- **EXCELLENT** (≥99%): 🏥
-- **GOOD** (95-98.9%): ✅
-- **FAIR** (90-94.9%): ⚠️
-- **POOR** (<90%): ❌
 
 ## 🐛 Troubleshooting
 
@@ -206,32 +133,6 @@ For verbose output, you can modify the scripts to add debug logging or run with 
 ```bash
 python3 -v redhat_status.py quick
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is open source. Please check the repository for specific license details.
-
-## 🔗 Related Links
-
-- [Red Hat Status Page](https://status.redhat.com)
-- [Red Hat Status API Documentation](https://status.redhat.com/api/v2/)
-- [Python Requests Documentation](https://docs.python-requests.org/)
-
-## 📞 Support
-
-For issues, questions, or contributions:
-- Open an issue in the repository
-- Check existing documentation
-- Review troubleshooting section above
-
 ---
 
 **Last Updated**: August 2025  
