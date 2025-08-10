@@ -1,4 +1,4 @@
-# Red Hat Status Checker - Simple Version
+# Red Hat Status Checker - Simple
 
 A lightweight Python utility to monitor Red Hat service status with global availability tracking and comprehensive reporting capabilities.
 
