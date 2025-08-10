@@ -2,6 +2,10 @@
 
 A lightweight Python utility to monitor Red Hat service status with global availability tracking and comprehensive reporting capabilities.
 
+## 🎨 Demo
+
+![Démo CLI](./demo.svg)
+
 ## 📋 Overview
 
 This project provides two versions of a Red Hat status monitoring tool:
