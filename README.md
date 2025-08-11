@@ -148,4 +148,12 @@ For verbose output, you can modify the scripts to add debug logging or run with 
 ```bash
 python3 -v redhat_status.py quick
 ```
+
+### How to make a demo cli
+- sudo apt install asciinema  
+- sudo apt install npm  
+- asciinema rec demo.cast # Ctrl+D to stop after running cli command demo
+- npx svg-term-cli --in demo.cast --out demo.svg --window # convert .cast to .svg file
+- add `![Demo CLI](./demo.svg)` to the README.md
+
 ---
