@@ -10,7 +10,7 @@ This project provides a standalone Red Hat status monitoring tool that fetches r
 
 ## 📋 Demo CLI Redhat Status (It takes a few seconds to load)
 
-![Démo CLI Redhat Status](./redhat_status.svg)
+![Démo CLI Redhat Status](./redhat_status_demo.svg)
 
 ## ✨ Features
 
