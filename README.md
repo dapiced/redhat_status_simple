@@ -8,6 +8,8 @@ A lightweight Python utility to monitor Red Hat service status with global avail
 
 This project provides a standalone Red Hat status monitoring tool that fetches real-time status data from Red Hat's official status API and provides various output formats including quick status checks, detailed service hierarchies, and data export capabilities.
 
+Redhat status page is base on the software https://www.atlassian.com/software/statuspage
+
 ## 📋 Demo CLI Redhat Status (It takes a few seconds to load)
 
 ![Démo CLI Redhat Status](./redhat_status_demo.svg)
