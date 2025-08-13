@@ -10,10 +10,6 @@ This project provides a standalone Red Hat status monitoring tool that fetches r
 
 Redhat status page is based on the software https://www.atlassian.com/software/statuspage
 
-## 📋 Demo CLI Redhat Status (It takes a few seconds to load)
-
-![Démo CLI Redhat Status](./redhat_status_demo.svg)
-
 ## ✨ Features
 
 - 🌐 **Global Availability Tracking**: Calculate and display overall service availability percentage
@@ -150,12 +146,4 @@ For verbose output, you can modify the scripts to add debug logging or run with 
 ```bash
 python3 -v redhat_status.py quick
 ```
-
-### How to make a demo cli
-- sudo apt install asciinema  
-- sudo apt install npm  
-- asciinema rec demo.cast # Ctrl+D to stop after running cli command demo
-- npx svg-term-cli --in demo.cast --out demo.svg --window # convert .cast to .svg file
-- add `![Demo CLI](./demo.svg)` to the README.md
-
 ---
