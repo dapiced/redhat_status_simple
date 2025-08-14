@@ -10,7 +10,7 @@ This project provides a standalone Red Hat status monitoring tool that fetches r
 
 Redhat status page is based on the software https://www.atlassian.com/software/statuspage
 
-Redhat status page API
+Redhat status API
 - https://status.redhat.com/api/v2/
 - https://status.redhat.com/api/v2/summary.json
 
