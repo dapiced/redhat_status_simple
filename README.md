@@ -2,6 +2,18 @@
 
 A lightweight Python utility to monitor Red Hat service status with global availability tracking and co## 📖 Complete Command Reference
 
+**Version:** 1.0 - Lightweight Edition
+
+## 📋 Overview
+
+This project provides a standalone Red Hat status monitoring tool that fetches real-time status data from Red Hat's official status API and provides various output formats including quick status checks, detailed service hierarchies, and data export capabilities.
+
+Redhat status page is based on the software https://www.atlassian.com/software/statuspage
+
+Redhat status page API
+- https://status.redhat.com/api/v2/
+- https://status.redhat.com/api/v2/summary.json
+
 ### Full Featured Version (`redhat_status.py`)
 
 | Command | Description | Output |
@@ -24,12 +36,6 @@ A lightweight Python utility to monitor Red Hat service status with global avail
 | `python3 redhat_status_minimal.py simple` | Main services only | List of main Red Hat services with status |
 | `python3 redhat_status_minimal.py full` | Complete hierarchical structure | All services in hierarchical tree format |eporting capabilities.
 
-**Version:** 1.0 - Lightweight Edition
-
-## 📋 Overview
-
-This project provides a standalone Red Hat status monitoring tool that fetches real-time status data from Red Hat's official status API and provides various output formats including quick status checks, detailed service hierarchies, and data export capabilities.
-
 ## 📁 Available Scripts
 
 ### `redhat_status.py` - Full Featured Version
@@ -42,8 +48,6 @@ A simplified version for users who want just the essential functionality without
 - ❌ Export functionality
 
 Perfect for users who prefer a clean, simple script with only the core monitoring options: `quick`, `simple`, and `full`.
-
-Redhat status page is based on the software https://www.atlassian.com/software/statuspage
 
 ## ✨ Features
 
